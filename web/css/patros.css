@@ -538,10 +538,26 @@ ul.cb-slideshow h4{
 p.m_5 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1.5em ;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	font-weight:bold;
 	line-height : 1.6;
 	color: #1E5267;
+}
+p.m_2 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	line-height : 1.6;
+	color: #1E5267;
+}
+p.m_6 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 1.1em ;
+	line-height : 1.6;
+	color: #1E5267;
+}
 
-
+.lc {
+	line-height : 1.6;
+	color: #1E5267;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
