@@ -157,7 +157,7 @@ span.text {
 .blog-sidebar ul>li>a:before{  display: inline-block;content: '\f105';font-family: 'FontAwesome';font-size: 13px;color: #999999;margin-right: 10px;}
 .comments-padding{padding-left:40px;}
 .hr-post{border-bottom: 1px solid #2f2f2f;width:100px;}
-.btn-custom  {width:100%;background-color:#E96840;border:1px solid #E96840;text-transform: uppercase;color:#1E5267;font-weight:bold;font-family: 'Open Sans Condensed', sans-serif; font-webkit-transition: all 0.2s ease;-moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;transition: all 0.2s ease;}
+.btn-custom  {width:100%;background-color:#E96840;border:1px solid #E96840;text-transform: uppercase;color:#1E5267;font-size:1.1em;font-weight:bold;font-family: 'Open Sans Condensed', sans-serif; font-webkit-transition: all 0.2s ease;-moz-transition: all 0.2s ease;-o-transition: all 0.2s ease;transition: all 0.2s ease;}
 .btn-custom:hover {background-color:transparent;border:1px solid #E96840;color:#fff;}
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, 
 input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, 
