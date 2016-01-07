@@ -43,7 +43,7 @@
 						<li class="active"><a href="#home">Inicio</a></li>
 						<li><a href="#about">Caba&ntildeas </a></li>
 						<li><a href="#services">Caracter&iacutesticas </a></li>
-						<li><a href="#portfolio1">Fotos</a></li>
+						<li id="botonMenuFoto"><a href="#portfolio1">Fotos</a></li>
 						<li><a href="#contact">Contacto-Reservas</a></li>
 						
 						
@@ -316,10 +316,10 @@
 			</div>
 
 			<ul class="filter nav nav-pills">
-			  <li data-value="all" ><a class="active" href="#">Todas</a></li>
-			  <li data-value="development"><a href="#">Caba&ntildeas</a></li>
-			  <li data-value="webdesign"><a href="#">Jard&iacuten</a></li>
-			  <li data-value="mobileapps"><a href="#">Entretenimiento</a></li>
+			  <li data-value="all" ><a class="active botonesFoto" href="#">Todas</a></li>
+			  <li data-value="development"><a class="botonesFoto" href="#">Caba&ntildeas</a></li>
+			  <li data-value="webdesign"><a href="#" class="botonesFoto">Jard&iacuten</a></li>
+			  <li data-value="mobileapps"><a href="#" class="botonesFoto">Entretenimiento</a></li>
 			</ul>
  
 			<ul class="port2">
@@ -405,7 +405,7 @@
 									</div>
 									<div class="col-sm-6 height-contact-element">
 										<div class="form-group">
-											<input type="telefono" name="telefono" class="form-control custom-labels" id="telefono" placeholder="Teléfono" required data-validation-required-message="Por favor escriba su celular!"/>
+											<input type="tel" name="telefono" class="form-control custom-labels" id="telefono" placeholder="Teléfono" required data-validation-required-message="Por favor escriba su celular!"/>
 											<p class="help-block text-danger"></p>
 										</div>
 									</div>
@@ -532,6 +532,10 @@
 			   $(".nav a").on("click", function(){
 					 $(".nav").find(".active").removeClass("active");
 					$(this).parent().addClass("active");
+				});
+				
+				$(".botonesFoto").on("click", function(){
+					document.getElementById('botonMenuFoto').classList.add('active')
 				});
 
 				$('body').append('<div id="toTop" class="btn btn-primary color1"><span class="glyphicon glyphicon-chevron-up"></span></div>');
