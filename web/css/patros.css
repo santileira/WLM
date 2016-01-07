@@ -547,7 +547,6 @@ ul.cb-slideshow h4{
 p.m_5 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 1.7em ;
-	margin-bottom: 10px;
 	font-weight:bold;
 	line-height : 1.6;
 	color: #1E5267;
@@ -576,4 +575,12 @@ p.m_6 {
 	line-height : 1.6;
 	color: #FFF;
 	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.opinion {
+	float:left;
+}
+
+.derecha {
+	float:right;
 }
