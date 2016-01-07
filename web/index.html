@@ -13,15 +13,19 @@
 		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/patros.css" >
+		<!-- Lightbox -->
+		<link href="css/lightbox.css" rel="stylesheet">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 			<![endif]-->
+
 	</head>
 
 	<body data-spy="scroll">
+	
 		<!-- Navigation -->
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container">
@@ -300,21 +304,21 @@
  
 			<ul class="port2">
 			  <li data-type="development" data-id="id-1" class="port3">
-				<a href="#" id="development1"><img src="images/port1.jpg" alt=""></a></li>
+				<a id="development1" href="images/port1.jpg" data-lightbox="imagenes" ><img src="images/port1.jpg" alt=""></a></li>
 			  <li data-type="webdesign" data-id="id-2" class="port3">
-				<a href="#" id="webdesign1"><img src="images/port2.jpg" alt=""></a>
+				<a href="images/port2.jpg" data-lightbox="imagenes" id="webdesign1"><img src="images/port2.jpg" alt=""></a>
 			  </li>
 			  <li data-type="mobileapps" data-id="id-3" class="port3">
-				<a href="#" id="mobileapps1"><img src="images/port3.jpg" alt=""></a>
+				<a  href="images/port3.jpg" data-lightbox="imagenes"  id="mobileapps1"><img src="images/port3.jpg" alt=""></a>
 			  </li>
 				<li data-type="development" data-id="id-4" class="port3">
-				<a href="#" id="development2"><img src="images/port4.jpg" alt=""></a>
+				<a  href="images/port4.jpg" data-lightbox="imagenes"  id="development2"><img src="images/port4.jpg" alt=""></a>
 			  </li>
 			  <li data-type="webdesign" data-id="id-5" class="port3">
-				<a href="#" id="webdesign2"><img src="images/port5.jpg" alt=""></a>
+				<a  href="images/port5.jpg" data-lightbox="imagenes"  id="webdesign2"><img src="images/port5.jpg" alt=""></a>
 			  </li>
 			  <li data-type="mobileapps" data-id="id-6" class="port3">
-				<a href="#" id="mobileapps2"><img src="images/port6.jpg" alt=""></a>
+				<a  href="images/port6.jpg" data-lightbox="imagenes"  id="mobileapps2"><img src="images/port6.jpg" alt=""></a>
 			  </li>
 			</ul>
 		  </div> 
@@ -773,6 +777,7 @@
 </script>
 
 
+<script src="js/lightbox.js"></script>
 </body>
 </html>
 
