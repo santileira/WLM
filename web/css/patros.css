@@ -320,6 +320,10 @@ figure.effect-oscar:hover img {	opacity: 0.4; }
 .port3 { width: 33%; min-width: 240px; display: inline-block; margin:0px 0px 7px 0px;  padding:0px; }
 .port3 img { width: 99%; min-width: 240px; max-width:380px; cursor: pointer;}
 .port3 img:hover { filter: brightness(70%) !important;  -webkit-filter: brightness(70%); -moz-filter: brightness(70%); -o-filter: brightness(70%); -ms-filter: brightness(70%);-webkit-transition:0.5s; transition: 0.5s; transition-timing-function: ease; }
+.port31 { width: 33%; min-width: 240px; display: inline-block; margin:0px 0px 7px 0px;  padding:0px; }
+.port31{ width: 99%; min-width: 240px; max-width:380px; cursor: pointer;}
+
+
 ul.nav-pills  { text-align: center; margin: 25px auto 20px auto; width: auto; display: table; }
 .nav-pills>li { float:none; text-align: center; display: table-cell; margin:0px; vertical-align: bottom; }
 .nav-pills>li a { color:#1E5267; border-radius:0px; text-align: center; font-weight: bold; padding: 10px 8px; border-bottom: 2px solid #3FBBEC; }
@@ -335,6 +339,10 @@ ul.nav-pills  { text-align: center; margin: 25px auto 20px auto; width: auto; di
 .team-img img { margin-left:auto; margin-right:auto; width:90%; }
 .port3 { width: 99%; min-width: 240px; display: inline-block; margin:0px 0px 7px 0px; padding:0px; }
 .port3 img { width: 100%; min-width: none; max-width:none; cursor: pointer;}
+}
+@media screen and (max-width: 768px) {
+.port31 { width: 99%; min-width: 240px; display: inline-block; margin:0px 0px 7px 0px; padding:0px; }
+.port31 { width: 100%; min-width: none; max-width:none; cursor: pointer;}
 }
 @media (max-width:1024px){
 .cb-slideshow li div h3 {
@@ -540,6 +548,10 @@ ul.cb-slideshow h4{
 .port3 { width: 49.5%; min-width: 240px; padding:0px; }
 .port3 img { width: 100%;  min-width: none; max-width:475px; cursor: pointer; }
 }
+/*@media screen and (min-width: 769px) and (max-width: 1140px) {
+.port31 { width: 49.5%; min-width: 240px; padding:0px; }
+.port31 { width: 100%;  min-width: none; max-width:475px; cursor: pointer; }
+}*/
 .nav-pills .active { background-color: #3FBBEC; color:#FFF; }
 .contact-msg { line-height:1.6em; margin-bottom:20px;}
 
@@ -591,3 +603,17 @@ p.m_6 {
 .derecha {
 	float:right;
 }
+	
+.google-maps {
+position: relative;
+padding-bottom: 75%; // This is the aspect ratio
+height: 0;
+overflow: hidden;
+}
+.google-maps iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100% !important;
+}
+
