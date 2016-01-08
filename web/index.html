@@ -39,7 +39,7 @@
 					<a class="navbar-brand" href="index.html"><img src="images/logo1.png" alt="company logo" /></a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right custom-menu">
+					<ul class="nav navbar-nav navbar-right custom-menu menuPrincipal">
 						<li class="active"><a href="#home">Inicio</a></li>
 						<li><a href="#about">Bienvenidos</a></li>
 						<li><a href="#services">Caba&ntildeas </a></li>
@@ -249,14 +249,29 @@
 			<div class="container">
 				<div class="text-center cabañas">
 				<h2>Ubicaci&oacuten </h2>
-				<img class="img-responsive displayed" src="images/short.png" alt="about">
+				<img class="img-responsive displayed" src="images/short.png" alt="about"></img>
 				</div>
-				<div class="row teamspace">
-					<div class="col-xs-12 col-sm-6 col-md-31">
-					<div class="google-maps">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6566.325185882647!2d-58.721875935045496!3d-34.625331238239745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbe248ebd8e99%3A0x447894924d8d08b!2sMendoza+5902%2C+B1736DTD+Trujui%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1452217011563" 
-								width="600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>			
+				<div>
+					<div class="row">
+						<div class="col-md-6 video_frame">
+							<div class="google-maps" >
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6566.325185882647!2d-58.721875935045496!3d-34.625331238239745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbe248ebd8e99%3A0x447894924d8d08b!2sMendoza+5902%2C+B1736DTD+Trujui%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1452217011563" 
+									width="600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="col-md-6 about_left lc">
+							<div>
+								<p class="ubicacion">Rodeados de los mejores haras y escuelas de equitaci&oacuten. </br>
+								Calle Mendoza 5902 esquina Puente Marquez, Paso del Rey, Moreno, Buenos Aires, a 500 metros del cruce del Acceso Oeste y Camino del Buen Ayre. </p>
+								<p class="marizqubi"><b>Transporte p&uacuteblico : </b></p>
+								<p class="marizqubi">&raquo Tren : - L&iacutenea Sarmiento hasta estaci&oacuten Moreno y luego colectivo l&iacutenea 302, taxi &oacute remis.</br>
+								&raquo Colectivos : - L&iacutenea 57 desde Plaza Italia &oacute Plaza Once hasta la parada de Puente Intendente Gnecco y Acceso Oeste en Paso del Rey y 
+								luego remis por 10 cuadras &oacute </br> - L&iacutenea 302 desde Estaci&oacuten Liniers y luego 3 cuadras caminando.</p> 
+								<p class="marizqubi"><b>Coordenadas GPS : </b></p>
+								<p class="marizqubi">&raquo Latitud : -34.623 <br>
+								&raquo Longitud : -58.729</p>
+							</div>
+						</div>
 					</div>
 					
 				</div>
@@ -428,6 +443,14 @@
 				$(".botonesFoto").on("click", function(){
 					document.getElementById('botonMenuFoto').classList.add('active')
 				});
+				
+				$(".menuPrincipal li a").on("click", function(){
+					var menu = document.getElementById('bs-example-navbar-collapse-1');
+					menu.setAttribute("style", "height: 0px;");
+					menu.setAttribute("aria-expanded", "false");
+					menu.setAttribute("class","collapse navbar-collapse");
+				});
+
 
 				$('body').append('<div id="toTop" class="btn btn-primary color1"><span class="glyphicon glyphicon-chevron-up"></span></div>');
 					$(window).scroll(function () {
