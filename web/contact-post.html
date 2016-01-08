@@ -24,7 +24,7 @@ $headers = 'From: '.$email_from."\r\n".
 if($correo_electronico == 'E-mail' || !filter_var($correo_electronico, FILTER_VALIDATE_EMAIL))
 	echo 'Debe ingresar correctamente un E-mail';
 else{
-	mail($para, $asunto, utf8_decode($mensajeFinal), $headera); 
+	mail($para, $asunto, utf8_decode($mensajeFinal), $headers); 
 	echo 'mensaje enviado correctamente'; 
 	}
 ?> 
