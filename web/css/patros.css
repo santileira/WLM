@@ -618,9 +618,8 @@ left: 0;
 }
 
 p.ubicacion{
-	font-size: 1.1em;
 	font-family: 'Open Sans Condensed', sans-serif;
-	line-height : 1.6;
+	line-height : 1.4;
 	color: #1E5267;
 	font-size: 1.3em;
 }
@@ -628,7 +627,7 @@ p.ubicacion{
 p.marizqubi{
 	margin-left : 20px;
 	font-family: 'Open Sans Condensed', sans-serif;
-	line-height : 1.4;
+	line-height : 1.3;
 	color: #1E5267;
 	font-size: 1em;
 }
