@@ -3,7 +3,7 @@
 
 .cb-slideshow, .cb-slideshow:after { position:absolute; width:100%; height:100%; top: 0px; left: 0px; z-index: 0; background-color:#131313;
 }
-.cb-slideshow li span { width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; background-size: cover;
+.cb-slideshow li span { background-position: center; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; background-size: cover;
     background-repeat: none; opacity: 0; z-index: 0; -webkit-backface-visibility: hidden; -webkit-animation: imageAnimation 36s linear infinite 0s;
     -moz-animation: imageAnimation 36s linear infinite 0s; -o-animation: imageAnimation 36s linear infinite 0s; -ms-animation: imageAnimation 36s linear infinite 0s;
     animation: imageAnimation 36s linear infinite 0s; }
@@ -89,20 +89,20 @@ footer { background-color: #1E1E1E; width:100%; display:block; color:#f7f7f7; }
 .color-elements{color:#E96840;}
 .custom-menu li{font-size: 12px;padding:0px 0px;}
 .btn-custom, .btn-custom:active,.btn-custom:focus, .btn-custom:hover{background-color:#E96840;border-color:#E96840}
-#about {padding: 80px 0px 40px 0px; color:#372f2d/*background-image:url("../images/background.jpg");background-repeat:repeat;*/}
+#bienvenidos {padding: 80px 0px 40px 0px; color:#372f2d/*background-image:url("../images/background.jpg");background-repeat:repeat;*/}
 #products {padding-top:80px;}
-#contact {padding-top:80px;}
+#contactos {padding-top:80px;}
 #location {padding-top:50px;}
 #bloghome {padding-top:80px; padding-bottom:20px;}
-#contact {padding-top:80px;}
+#contactos {padding-top:80px;}
 .homeport1 { margin-top:20px; }
 .homeport2 { margin-top:40px; }
 .orangeback{ background-color: #1E5267; }
 /*#about p{color:#313131;line-height: 1.8em;
     font-size: 14px;}*/
 .prodmap{margin-right:0px;  margin-left:0px;  position: relative;}
-#contact {background-color: #1E5267;}
-#contact .fa{padding-right: 31px; color:#3FBBEC ;}
+#contactos {background-color: #1E5267;}
+#contactos .fa{padding-right: 31px; color:#3FBBEC ;}
 span.text a{
 	color:#fff;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -201,12 +201,12 @@ img.displayed{display: block;margin-left: auto;margin-right: auto;background-col
 .homeservices1 { padding-top:40px; margin-bottom:40px; }
 .homeservices1 a { color:#FFF; }
 .homeservices1 a:hover { color:#FFF; text-decoration: none; }
-#services{ padding-top:60px; }
-#services p{ color:#FFF;font-size: 1.1em;
+#cabañas{ padding-top:60px; }
+#cabañas p{ color:#FFF;font-size: 1.1em;
     line-height: 1.6;}
-#services img { -webkit-filter: grayscale(1); filter: grayscale(1); }
-#services img:hover { -webkit-filter: grayscale(0); filter: grayscale(0); -webkit-transition:0.5s;transition: 0.5s; transition-timing-function: ease; }
-#services h2 { color:#FFF; }
+#cabañas img { -webkit-filter: grayscale(1); filter: grayscale(1); }
+#cabañas img:hover { -webkit-filter: grayscale(0); filter: grayscale(0); -webkit-transition:0.5s;transition: 0.5s; transition-timing-function: ease; }
+#cabañas h2 { color:#FFF; }
 .centerim{ text-align:center; font-size:40px; margin: 10px auto; color:#b9b9b9;}
 .centerim:hover{ color:#2D2D2D;}
 .fa-lg { font-size:70px; min-height:150px; }
@@ -308,13 +308,13 @@ figure.effect-oscar:hover img {	opacity: 0.4; }
 #contactpage .form-control { color:#3d3d3d; }
 #contactpage h2 { margin:40px 0; }
 #page1 {padding: 80px 0px 40px 0px;}
-#portfolio1 {padding-top:80px; margin-bottom: 80px; clear:both; display: block; }
-#meet-team { padding-top:80px;}
-#meet-team ul {text-align: center;}
-#meet-team li{ display: inline-block; margin-right:24px; font-size:18px; }
-#meet-team .teamspace{ margin-top:30px; }
-#meet-team  .team-img img { filter: grayscale(1); -webkit-filter: grayscale(1); -moz-filter: grayscale(1); -o-filter: grayscale(1); -ms-filter: grayscale(1); -webkit-transition:0.8s; transition: 0.8s; }
-#meet-team  .team-img img:hover { filter: grayscale(0); -webkit-filter: grayscale(0); -moz-filter: grayscale(0); -o-filter: grayscale(0); -ms-filter: grayscale(0); -webkit-transition:0.8s; transition: 0.8s; cursor: pointer; }
+#fotos {padding-top:80px; margin-bottom: 80px; clear:both; display: block; }
+#ubicacion { padding-top:80px;}
+#ubicacion ul {text-align: center;}
+#ubicacion li{ display: inline-block; margin-right:24px; font-size:18px; }
+#ubicacion .teamspace{ margin-top:30px; }
+#ubicacion  .team-img img { filter: grayscale(1); -webkit-filter: grayscale(1); -moz-filter: grayscale(1); -o-filter: grayscale(1); -ms-filter: grayscale(1); -webkit-transition:0.8s; transition: 0.8s; }
+#ubicacion  .team-img img:hover { filter: grayscale(0); -webkit-filter: grayscale(0); -moz-filter: grayscale(0); -o-filter: grayscale(0); -ms-filter: grayscale(0); -webkit-transition:0.8s; transition: 0.8s; cursor: pointer; }
  /*portfolio*/
 .port2 { margin:0px;  padding:0px;  max-width: 100%; }
 .port3 { width: 33%; min-width: 240px; display: inline-block; margin:0px 0px 7px 0px;  padding:0px; }
@@ -333,7 +333,7 @@ ul.nav-pills  { text-align: center; margin: 25px auto 20px auto; width: auto; di
 .modal-dialog { height: 100%; width: 100%; display: flex; align-items: center; }
 .modal-content { margin: 0 auto;  max-width: 80%;  max-height: 80%; }
 .nav li a { text-transform: uppercase; }
-#about h2, #services h2, #bloghome h2, #meet-team h2, #portfolio1 h2, #contact h2, #home h3 { text-transform: uppercase; }
+#bienvenidos h2, #cabañas h2, #bloghome h2, #ubicacion h2, #fotos h2, #contactos h2, #inicio h3 { text-transform: uppercase; }
 @media screen and (max-width: 768px) {
 .navbar-inverse .navbar-nav li { margin-right:5px; margin-left:5px;}
 .team-img img { margin-left:auto; margin-right:auto; width:90%; }
@@ -452,14 +452,14 @@ header.carousel {
 .h2, h2 {
     font-size: 20px;
 }
-#about {
+#bienvenidos {
     padding: 30px 0px 0 0px;
 }
 #bloghome {
     padding-top:20px;
     padding-bottom: 0;
 }
-#portfolio1 {
+#fotos {
     padding-top: 10px;
     margin-bottom: 0;
 }    
@@ -469,7 +469,7 @@ div#map-canvas-holder {
 .form-control {
    font-size: 11px !important;
 }  
-#contact .fa {
+#contactos .fa {
     padding-right: 15px;
 }  
 header.carousel {
@@ -485,13 +485,13 @@ ul.cb-slideshow h4{
 /*#about p {
     font-size: 13px;
 }*/
-#services {
+#cabañas {
     padding-top: 15px;
 }
 .list-social-icons li {
     margin: 0px 5px;
 }
-#meet-team {
+#ubicacion {
     padding-top:10px;
 }
 #follow-us {
@@ -507,7 +507,7 @@ ul.cb-slideshow h4{
 .sidebar-padding {
     padding: 0;
 }
-#contact {
+#contactos {
     padding-top: 20px;
 }
 .col-lg-6.col-md-8 {
