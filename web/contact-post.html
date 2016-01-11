@@ -21,6 +21,7 @@ $asunto = "E-mail Contacto - CABAÑAS LA MORENA";
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion(); 
+
 if($correo_electronico == 'E-mail' || !filter_var($correo_electronico, FILTER_VALIDATE_EMAIL))
 	echo 'Debe ingresar correctamente un E-mail';
 else{

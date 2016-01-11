@@ -22,7 +22,23 @@
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 			<![endif]-->
-
+			<script type="text/javascript">
+			
+			function showLightbox(div) {
+				document.getElementById('enviado').innerHTML=div;
+				document.getElementById('over').style.display='block';
+				document.getElementById('fade').style.display='block';
+				}
+			function hideLightbox() {
+				document.getElementById('over').style.display='none';
+				document.getElementById('fade').style.display='none';
+				formReset();
+				}
+			function formReset() {
+				document.getElementById("contactForm").reset();
+				
+				}
+		</script>
 	</head>
 
 	<body data-spy="scroll">
@@ -96,7 +112,7 @@
 									<p class="m_5" >Ahora, para disfrutar y descansar, no necesit&aacutes irte tan lejos.</p>
 									<p class="m_2">Nuestras cuatro &uacutenicas caba&ntildeas fueron pensadas para satisfacer a todos aquellos que no quieran o no puedan alejarse de la ciudad, pero que necesitan desconectarse y relajarse con su pareja, con su familia y con amigos.<br> 
 									Disfrutar un lugar seguro con mucho espacio verde, ni&ntildeos jugando libremente, despertar con el canto de los p&aacutejaros, atardeceres so&ntildeados, una refrescante piscina y la parrilla con las brasas esperando.</p>
-									<p class="m_6">Consult&aacute en nuestra web por promociones especiales de acuerdo a cantidad de d&iacuteas y de personas alojadas.<br></p>
+									<p class="m_6">Consult&aacute <a class="hipervinculo" href="#contactos">en nuestra web</a> por promociones especiales de acuerdo a cantidad de d&iacuteas y de personas alojadas.<br></p>
 									<a href="http://www.booking.com/hotel/ar/cabanas-la-morena.es.html?aid=376374;label=esrow-2FiYWyplcmHTsm7u4nIXBwS70146491326%3Apl%3Ata%3Ap1%3Ap2845.000%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-65526620%3Alp1000073%3Ali%3Adec%3Adm;sid=ca858ab8e5ed241b50ad6ed45eeef914;dcid=1;dist=0;group_adults=2;room1=A%2CA;sb_price_type=total;srfid=20b0140bb6dd4cf106656e5a521ed1f0382938ebX1;type=total;ucfs=1&"
 									target="_blank" >
 									<img class="img-responsive displayed opinion" src="images/ta2.png" alt="Visite las cabañas">
@@ -304,7 +320,7 @@
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-8">
-							<form class="inline" id="contactForm" method="post">
+							<form name="formulario" class="inline" id="contactForm" method="post">
 								<div class="row">
 									<div class="col-sm-6 height-contact-element">
 										<div class="form-group">
@@ -314,7 +330,7 @@
 									</div>
 									<div class="col-sm-6 height-contact-element">
 										<div class="form-group">
-											<input type="email" name="E-mail" class="form-control custom-labels" id="email" placeholder="E-mail" required data-validation-required-message="Por favor escriba su e-mail!"/>
+											<input type="email" name="Email" class="form-control custom-labels" id="email" placeholder="E-mail" required data-validation-required-message="Por favor escriba su e-mail!"/>
 											<p class="help-block text-danger"></p>
 										</div>
 									</div>
@@ -332,7 +348,7 @@
 										</div>
 									</div>
 									<div id="success" style="float: right;"> </div>
-									<div class="col-sm-3 col-xs-6 height-contact-element">
+									<div class="col-sm-3 col-sm-6 height-contact-element">
 										<div class="form-group">
 											<input type="SUBMIT" class="btn btn-md btn-custom btn-noborder-radius" value="Enviar"/>
 											
@@ -368,7 +384,7 @@
 								<div class="col-md-12 height-contact-element">    
 									<div class="form-group">
 										<i class="fa fa-2x fa-envelope"></i>
-										<span class="text"><a href="mailto:cabaniaslamorena@gmail.com">cabaniaslamorena@gmail.com</a></span>
+										<span class="text"><a href="mailto:cabaniaslamorena@gmail.com?subject=E-mail Contacto - CABAÑAS LA MORENA">cabaniaslamorena@gmail.com</a></span>
 									</div>
 								</div>
 								<div class="col-md-12 height-contact-element">
@@ -501,26 +517,34 @@
 					var telefono = $("#Telefono").val();
 					var message = $("#Mensaje").val();
 					var goodToGo = true;
-					var messgaeError = 'Request can not be send';
+					
 					var pattern = new RegExp(/^(('[\w-\s]+')|([\w-]+(?:\.[\w-]+)*)|('[\w-\s]+')([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-
+				
 					 
 					if (goodToGo) {
 					   $.ajax({
 						 data: $('#contactForm').serialize(),
 						 beforeSend: function() {
-						   $('#success').html('<div class="col-md-12 text-center"><img src="images/spinner1.gif" alt="spinner" /></div>');
+						   
 						 },
 						 success:function(response){
 						   if (response==1) {
-							 $('#success').html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button>El e-mail se envio correctamente</div>');
+								
+								showLightbox('<div class="mensaje" style="color: green;">El e-mail se envió correctamente. Nos contactaremos a la brevedad. <br> La Morena</div>');
+							 //$('#success').html('<div "class="alert alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button>El e-mail se envio correctamente</div>');
 							//window.location.reload();
+								
+								
 						   } else {
-							 $('#success').html('<div class="alert alert-danger">No se pudo enviar. Intentelo mas tarde</div>');
+								showLightbox('<div class="mensaje" style="color: RED;">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. <br> La Morena</div>')
+								//$('#success').html('<div class="alert alert-danger">No se pudo enviar. Intentelo mas tarde</div>');
+						
 						   }
+						  
 						 },
 						 error:function(e){
-						   $('#success').html('<div class="col-md-12 text-center">We could not fetch the data from the server. Please try again!</div>');
+						   showLightbox('<div class="mensaje" style="color: RED;">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. <br> La Morena</div>');
+						   //$('#success').html('<div class="col-md-12 text-center">We could not fetch the data from the server. Please try again!</div>');
 						 },
 						 complete: function(done){
 						   console.log('Finished');
@@ -530,18 +554,30 @@
 					   });
 					   return true;
 					} else {
-					   $('#success').html('<div class="col-md-12 text-center">'+messgaeError+'</div>');
+					   showLightbox('<div class="mensaje" style="color: RED;">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. <br> La Morena</div>');
+					   //$('#success').html('<div class='mensaje' style="color: RED;">'+messgaeError+'</div>');
 					   return false;
 					}
 					return false;
 				});
 			});
 		
+
 		
 		</script>
 
+	<div id="over" class="overbox">
+	<div id="content">
+	<div id="enviado"></div>
+	<a href="javascript:hideLightbox();"><br>Cerrar</a>
+	</div>
+	</div>
+	<div id="fade" class="fadebox">&nbsp;</div>
 
-<script src="js/lightbox.js"></script>
+<script src="js/lightbox.js">
+
+</script>
+
 </body>
 </html>
 

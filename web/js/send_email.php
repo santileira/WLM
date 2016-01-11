@@ -1,9 +1,9 @@
 <?php
-if (isset($_REQUEST['E-mail']))  {
+if (isset($_REQUEST['Email']))  {
     //Email information
     $admin_email = "santiagoleira10@gmail.com";
     $name = $_REQUEST['Nombre'];
-    $email = $_REQUEST['E-mail'];
+    $email = $_REQUEST['Email'];
 	$telefono = $_REQUEST['Telefono'];
     $message = $_REQUEST['Mensaje'];
 	$asunto = "E-mail Contacto - CABAÑAS LA MORENA";
