@@ -15,19 +15,17 @@
 .cb-slideshow li:nth-child(1) span { background-image: url(../images/unsplash1.jpg); }
 .cb-slideshow li:nth-child(2) span { background-image: url(../images/unsplash2.jpg); -webkit-animation-delay: 6s; -moz-animation-delay: 6s;
     -o-animation-delay: 6s; -ms-animation-delay: 6s; animation-delay: 6s; }
-.cb-slideshow li:nth-child(3) span { background-image: url(../images/unsplash3.jpg); -webkit-animation-delay: 12s; -moz-animation-delay: 12s;
+.cb-slideshow li:nth-child(3) span { background-image: url(../images/unsplash3.JPG); -webkit-animation-delay: 12s; -moz-animation-delay: 12s;
     -o-animation-delay: 12s; -ms-animation-delay: 12s; animation-delay: 12s; }
 .cb-slideshow li:nth-child(4) span { background-image: url(../images/unsplash4.jpg); -webkit-animation-delay: 18s; -moz-animation-delay: 18s;
     -o-animation-delay: 18s; -ms-animation-delay: 18s; animation-delay: 18s; }
 .cb-slideshow li:nth-child(5) span { background-image: url(../images/unsplash5.jpg); -webkit-animation-delay: 24s; -moz-animation-delay: 24s;
     -o-animation-delay: 24s; -ms-animation-delay: 24s; animation-delay: 24s; }
 .cb-slideshow li:nth-child(6) span { background-image: url(../images/unsplash6.jpg); -webkit-animation-delay: 30s; -moz-animation-delay: 30s;
-    -o-animation-delay: 30s; -ms-animation-delay: 32s; animation-delay: 30s; }	
-.cb-slideshow li:nth-child(2) div { -webkit-animation-delay: 6s; -moz-animation-delay: 6s; -o-animation-delay: 6s; -ms-animation-delay: 6s;
-    animation-delay: 6s; }
+    -o-animation-delay: 30s; -ms-animation-delay: 30s; animation-delay: 30s; }	
+.cb-slideshow li:nth-child(2) div { -webkit-animation-delay: 6s; -moz-animation-delay: 6s; -o-animation-delay: 6s; -ms-animation-delay: 6s; animation-delay: 6s; }
 .cb-slideshow li:nth-child(3) div { -webkit-animation-delay: 12s; -moz-animation-delay: 12s; -o-animation-delay: 12s; -ms-animation-delay: 12s; animation-delay: 12s; }
-.cb-slideshow li:nth-child(4) div { -webkit-animation-delay: 18s; -moz-animation-delay: 18s; -o-animation-delay: 18s; -ms-animation-delay: 18s;
-    animation-delay: 18s; }
+.cb-slideshow li:nth-child(4) div { -webkit-animation-delay: 18s; -moz-animation-delay: 18s; -o-animation-delay: 18s; -ms-animation-delay: 18s; animation-delay: 18s; }
 .cb-slideshow li:nth-child(5) div { -webkit-animation-delay: 24s; -moz-animation-delay: 24s; -o-animation-delay: 24s; -ms-animation-delay: 24s; animation-delay: 24s; }
 .cb-slideshow li:nth-child(6) div { -webkit-animation-delay: 30s; -moz-animation-delay: 30s; -o-animation-delay: 30s; -ms-animation-delay: 30s; animation-delay: 30s; }
 
@@ -201,12 +199,12 @@ img.displayed{display: block;margin-left: auto;margin-right: auto;background-col
 .homeservices1 { padding-top:40px; margin-bottom:40px; }
 .homeservices1 a { color:#FFF; }
 .homeservices1 a:hover { color:#FFF; text-decoration: none; }
-#cabañas{ padding-top:60px; }
-#cabañas p{ color:#FFF;font-size: 1.1em;
+#cabanas{ padding-top:60px; }
+#cabanas p{ color:#FFF;font-size: 1.1em;
     line-height: 1.6;}
-#cabañas img { -webkit-filter: grayscale(1); filter: grayscale(1); }
-#cabañas img:hover { -webkit-filter: grayscale(0); filter: grayscale(0); -webkit-transition:0.5s;transition: 0.5s; transition-timing-function: ease; }
-#cabañas h2 { color:#FFF; }
+#cabanas img { -webkit-filter: grayscale(1); filter: grayscale(1); }
+#cabanas img:hover { -webkit-filter: grayscale(0); filter: grayscale(0); -webkit-transition:0.5s;transition: 0.5s; transition-timing-function: ease; }
+#cabanas h2 { color:#FFF; }
 .centerim{ text-align:center; font-size:40px; margin: 10px auto; color:#b9b9b9;}
 .centerim:hover{ color:#2D2D2D;}
 .fa-lg { font-size:70px; min-height:150px; }
@@ -333,7 +331,7 @@ ul.nav-pills  { text-align: center; margin: 25px auto 20px auto; width: auto; di
 .modal-dialog { height: 100%; width: 100%; display: flex; align-items: center; }
 .modal-content { margin: 0 auto;  max-width: 80%;  max-height: 80%; }
 .nav li a { text-transform: uppercase; }
-#bienvenidos h2, #cabañas h2, #bloghome h2, #ubicacion h2, #fotos h2, #contactos h2, #inicio h3 { text-transform: uppercase; }
+#bienvenidos h2, #cabanas h2, #bloghome h2, #ubicacion h2, #fotos h2, #contactos h2, #inicio h3 { text-transform: uppercase; }
 @media screen and (max-width: 768px) {
 .navbar-inverse .navbar-nav li { margin-right:5px; margin-left:5px;}
 .team-img img { margin-left:auto; margin-right:auto; width:90%; }
@@ -485,7 +483,7 @@ ul.cb-slideshow h4{
 /*#about p {
     font-size: 13px;
 }*/
-#cabañas {
+#cabanas {
     padding-top: 15px;
 }
 .list-social-icons li {

@@ -1,5 +1,5 @@
 <?php
-if (isset($_REQUEST['email']))  {
+if (isset($_REQUEST['E-mail']))  {
     //Email information
     $admin_email = "santiagoleira10@gmail.com";
     $name = $_REQUEST['Nombre'];
