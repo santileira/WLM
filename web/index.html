@@ -596,20 +596,20 @@
 						 success:function(response){
 						   if (response==1) {
 								
-								showLightbox('<div class="mensaje" style="color: green;">El e-mail se envió correctamente. Nos contactaremos a la brevedad. <br> La Morena</div>');
+								showLightbox('<div class="mensaje" style="color: green; text-align:center">El e-mail se envió correctamente. Nos contactaremos a la brevedad. <br> La Morena</div>');
 							 //$('#success').html('<div "class="alert alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button>El e-mail se envio correctamente</div>');
 							//window.location.reload();
 								
 								
 						   } else {
-								showLightbox('<div class="mensaje" style="color: RED;">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. <br> La Morena</div>')
+								showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. <br> La Morena</div>')
 								//$('#success').html('<div class="alert alert-danger">No se pudo enviar. Intentelo mas tarde</div>');
 						
 						   }
 						  
 						 },
 						 error:function(e){
-						   showLightbox('<div class="mensaje" style="color: RED;">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. <br> La Morena</div>');
+						   showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. <br> La Morena</div>');
 						   //$('#success').html('<div class="col-md-12 text-center">We could not fetch the data from the server. Please try again!</div>');
 						 },
 						 complete: function(done){
@@ -620,7 +620,7 @@
 					   });
 					   return true;
 					} else {
-					   showLightbox('<div class="mensaje" style="color: RED;">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. <br> La Morena</div>');
+					   showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. <br> La Morena</div>');
 					   //$('#success').html('<div class='mensaje' style="color: RED;">'+messgaeError+'</div>');
 					   return false;
 					}
@@ -635,7 +635,7 @@
 	<div id="over" class="overbox">
 	<div id="content">
 	<div id="enviado"></div>
-	<a href="javascript:hideLightbox();"><br>Cerrar</a>
+	<a href="javascript:hideLightbox();" style="float:right">Cerrar</a><br/>
 	</div>
 	</div>
 	<div id="fade" class="fadebox">&nbsp;</div>
