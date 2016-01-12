@@ -54,13 +54,30 @@
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 				}
 			var map = new google.maps.Map(mapCanvas , mapOptions);
+			
+			
+			 var contentString =  '<div style="margin-top:5px">'+
+								  '<img src="images/mifavicon2.ico" ' +
+								  'style="display:inline; width:25px;height:25px; margin-right:10px"></img>' + 
+								  '<p style="color:black; display:inline">La Morena. Cabañas Boutique</p>'+
+								  '</div>';
+			
+			var infowindow = new google.maps.InfoWindow({
+				content: contentString
+			});
 		
 			var marker = new google.maps.Marker({
 				position: myLatlng,
-				title:"LA MORENA. Cabañas Boutique"
+				title:"LA MORENA. Cabañas Boutique",
 				});
 			
 			marker.setMap(map);
+			
+			marker.addListener('click', function() {
+				infowindow.open(map, marker);
+			});
+			
+			infowindow.open(map, marker);
 		}
 		
 		
