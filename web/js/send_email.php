@@ -6,7 +6,7 @@ if (isset($_REQUEST['Email']))  {
     $email = $_REQUEST['Email'];
 	$telefono = $_REQUEST['Telefono'];
     $message = $_REQUEST['Mensaje'];
-	$asunto = "E-mail Contacto - CABAÑAS LA MORENA";
+	$asunto = "E-mail Contacto - CABAÑAS LA MORENA - WEB";
 	
 	$mensajeFinal = "Nombre: " . $name . " \r\n"; 
 	$mensajeFinal .= "E-mail: " . $email . " \r\n"; 

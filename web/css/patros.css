@@ -113,7 +113,7 @@ span.text {
 	color:#fff;
 
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	
 }
 #follow-us {height:220px;}
@@ -605,8 +605,8 @@ p.m_6 {
 .google-maps {
 margin-top: 20px;
 position: relative;
-padding-bottom: 20px;
-height: 0%;
+
+
 overflow: hidden;
 }
 .google-maps iframe {
@@ -701,6 +701,6 @@ color:#1E5267;
 }
 
 #map {
-        width: 600px;
+ width: 600px;
         height: 550px;
       }
