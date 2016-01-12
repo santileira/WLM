@@ -43,20 +43,17 @@
 		
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
 		<script>
-		var map;
 		function initialize() {
 			
 			var mapCanvas = document.getElementById('map');
 			
-			
-			
-			var myLatlng = new google.maps.LatLng(-34.6228816,-58.7293432);
+			var myLatlng = new google.maps.LatLng(-34.6245121,-58.730392);
 			var mapOptions = {
 				center: myLatlng,
 				zoom: 15,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 				}
-			 = new google.maps.Map(mapCanvas , mapOptions);
+			var map = new google.maps.Map(mapCanvas , mapOptions);
 		
 			var marker = new google.maps.Marker({
 				position: myLatlng,
@@ -64,7 +61,6 @@
 				});
 			
 			marker.setMap(map);
-		
 		}
 		
 		
