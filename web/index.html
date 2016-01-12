@@ -53,7 +53,7 @@
 			var myLatlng = new google.maps.LatLng(-34.623,-58.729);
 			var mapOptions = {
 				center: myLatlng,
-				zoom: 14,
+				zoom: 15,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 				}
 			map = new google.maps.Map(mapCanvas , mapOptions);
@@ -64,6 +64,10 @@
 				});
 			
 			marker.setMap(map);
+			
+			 google.maps.event.addDomListener(window, 'resize', function() {
+    map.setCenter(center);
+});
 		}
 		
 		
@@ -71,10 +75,8 @@
 	
 		
 		google.maps.event.addDomListener(window, 'load', initialize);
-		function moveToDarwin() {
-
-		map.setCenter(myLatlng);
-}
+		
+		
 		</script>
 	</head>
 
