@@ -605,7 +605,7 @@ p.m_6 {
 .google-maps {
 margin-top: 20px;
 position: relative;
-padding-bottom: 90%; // This is the aspect ratio
+padding-bottom: 20px;
 height: 0%;
 overflow: hidden;
 }
