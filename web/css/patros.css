@@ -617,7 +617,7 @@ left: 0;
 
 p.ubicacion{
 	font-family: 'Open Sans Condensed', sans-serif;
-	line-height : 1.3;
+	line-height : 1.2;
 	color: #1E5267;
 	font-size: 1.2em;
 }
@@ -625,7 +625,7 @@ p.ubicacion{
 p.marizqubi{
 	margin-left : 20px;
 	font-family: 'Open Sans Condensed', sans-serif;
-	line-height : 1.3;
+	line-height : 1.2;
 	color: #1E5267;
 	font-size: 1em;
 }
@@ -670,18 +670,18 @@ background-image: url(../images/logo1-.png);
     position: fixed;
     top: 25%;
     left: 25%;
-    width: 100%;
-    height: 100%;
-    z-index:100000000000000000;
+    width: 60%;
+    height: 60%;
+    z-index:1002;
     overflow: auto;
 	
 }
 #content {
 	background-color: #FFF;
-	border: solid 3px #3FBBEC;
+	border: solid 2px #3FBBEC;
 	padding: 10px;
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:1.3em;
+	font-size:1.1em;
 	line-height:1;
 }
 
@@ -699,3 +699,8 @@ color:#1E5267;
 
 
 }
+
+#map {
+        width: 600px;
+        height: 550px;
+      }

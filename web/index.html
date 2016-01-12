@@ -39,6 +39,41 @@
 				
 				}
 		</script>
+		
+		
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		var map;
+		function initialize() {
+			
+			var mapCanvas = document.getElementById('map');
+			
+			
+			
+			var myLatlng = new google.maps.LatLng(-34.6228816,-58.7293432);
+			var mapOptions = {
+				center: myLatlng,
+				zoom: 15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+			 = new google.maps.Map(mapCanvas , mapOptions);
+		
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				title:"LA MORENA. Cabañas Boutique"
+				});
+			
+			marker.setMap(map);
+		
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		google.maps.event.addDomListener(window, "resize", function() {
+		var center = map.getCenter();
+		google.maps.event.trigger(map, "resize");
+		map.setCenter(center); 
+		});
+	
+		</script>
 	</head>
 
 	<body data-spy="scroll">
@@ -262,7 +297,7 @@
 		<section id="ubicacion">
 			<div class="container">
 				<div class="text-center cabañas">
-				<br>
+				<br><br>
 				<h2>Ubicaci&oacuten </h2>
 				<img class="img-responsive displayed" src="images/short.png" alt="about"></img>
 				</div>
@@ -270,9 +305,10 @@
 					<div class="row">
 						<div class="col-md-6 video_frame">
 							<div class="google-maps" >
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15617.938382869406!2d-58.70974897595968!3d-34.6226899099055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbe248ebd8e99%3A0x447894924d8d08b!2sMendoza+5902%2C+B1736DTD+Trujui%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1452366049176" 
-									width="600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
-							</div>
+									<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15617.938382869406!2d-58.70974897595968!3d-34.6226899099055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbe248ebd8e99%3A0x447894924d8d08b!2sMendoza+5902%2C+B1736DTD+Trujui%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1452366049176" 
+									width="600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+							
+							 <div id="map"></div></div>
 						</div>
 						<div class="col-md-6">
 							<div>
