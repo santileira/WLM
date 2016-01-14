@@ -1,12 +1,12 @@
 <?php
 if (isset($_REQUEST['Email']))  {
     //Email information
-    $admin_email = "santiagoleira10@gmail.com";
+    $admin_email = "cabaniaslamorena@gmail.com";
     $name = $_REQUEST['Nombre'];
     $email = $_REQUEST['Email'];
 	$telefono = $_REQUEST['Telefono'];
     $message = $_REQUEST['Mensaje'];
-	$asunto = "E-mail Contacto - CABAÑAS LA MORENA - WEB";
+	$asunto = "WEB E-mail Contacto - CABAÑAS LA MORENA";
 	
 	$mensajeFinal = "Nombre: " . $name . " \r\n"; 
 	$mensajeFinal .= "E-mail: " . $email . " \r\n"; 
