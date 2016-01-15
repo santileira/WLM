@@ -289,18 +289,16 @@
 			  	  <li data-type="mobileapps" data-id="id-10" class="port3">
 				<a  href="images/popup7.JPG" data-lightbox="imagenes"  id="mobileapps1"><img src="images/port7.JPG" alt=""></a>
 			  </li>
-			  
 			  <li data-type="development" data-id="id-3" class="port3">
 				<a  href="images/popup3.JPG" data-lightbox="imagenes"  id="development3"><img src="images/port3.jpg" alt=""></a>
 			  </li>
-			    <li data-type="webdesign" data-id="id-7" class="port3">
+			  <li data-type="webdesign" data-id="id-7" class="port3">
 				<a  href="images/popup10.JPG" data-lightbox="imagenes"  id="webdesign1"><img src="images/port10.JPG" alt=""></a>
 			  </li>
-			  	  <li data-type="mobileapps" data-id="id-11" class="port3">
+			  <li data-type="mobileapps" data-id="id-11" class="port3">
 				<a  href="images/popup8.JPG" data-lightbox="imagenes"  id="mobileapps2"><img src="images/port8.JPG" alt=""></a>
 			  </li>
-			 
-				<li data-type="development" data-id="id-4" class="port3">
+			  <li data-type="development" data-id="id-4" class="port3">
 				<a  href="images/popup4.JPG" data-lightbox="imagenes"  id="development4"><img src="images/port4.jpg" alt=""></a>
 			  </li>
 			  <li data-type="development" data-id="id-5" class="port3">
@@ -309,12 +307,16 @@
 			  <li data-type="development" data-id="id-6" class="port3">
 				<a  href="images/popup6.JPG" data-lightbox="imagenes"  id="development6"><img src="images/port6.JPG" alt=""></a>
 			  </li>
-			
-			  
-		
-		
-			 
-			</ul>
+			   <li data-type="webdesign" data-id="id-13" class="port3">
+				<a  href="images/popup13.JPG" data-lightbox="imagenes"  id="webdesign4"><img src="images/port13.jpg" alt=""></a>
+			  </li>
+			  <li data-type="webdesign" data-id="id-14" class="port3">
+				<a  href="images/popup14.JPG" data-lightbox="imagenes"  id="webdesign5"><img src="images/port14.jpg" alt=""></a>
+			  </li>
+			  <li data-type="webdesign" data-id="id-15" class="port3">
+				<a  href="images/popup15.JPG" data-lightbox="imagenes"  id="webdesign6"><img src="images/port15.JPG" alt=""></a>
+			  </li>
+
 			</ul>
 		  </div> 
 		</div>
@@ -398,7 +400,7 @@
 									</div>
 									<div class="col-sm-6 height-contact-element">
 										<div class="form-group">
-											<input type="tel" name="Telefono" class="form-control custom-labels" id="telefono" placeholder="Teléfono" required data-validation-required-message="Por favor escriba su celular!"/>
+											<input type="tel" name="Telefono" class="form-control custom-labels" id="telefono" placeholder="Teléfono"/>
 											<p class="help-block text-danger"></p>
 										</div>
 									</div>
@@ -412,7 +414,7 @@
 									<div id="success" style="float: right;"> </div>
 									<div class="col-sm-3 col-sm-6 height-contact-element">
 										<div class="form-group">
-											<input type="SUBMIT" class="btn btn-md btn-custom btn-noborder-radius" value="Enviar"/>
+											<input type="SUBMIT" name="enviar" class="btn btn-md btn-custom btn-noborder-radius" value="Enviar"/>
 											
 										</div>
 									
@@ -562,7 +564,7 @@
 
 					// get values from FORM
 					var name = $("#Nombre").val();
-					var email = $("#E-mail").val();
+					var email = $("#Email").val();
 					var telefono = $("#Telefono").val();
 					var message = $("#Mensaje").val();
 					var goodToGo = true;
@@ -585,14 +587,14 @@
 								
 								
 						   } else {
-								showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. <br> La Morena</div>')
+								showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. Gracias <br> La Morena</div>')
 								//$('#success').html('<div class="alert alert-danger">No se pudo enviar. Intentelo mas tarde</div>');
 						
 						   }
 						  
 						 },
 						 error:function(e){
-						   showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. <br> La Morena</div>');
+						   showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor vuelvalo a intentar más tarde. <br> La Morena</div>');
 						   //$('#success').html('<div class="col-md-12 text-center">We could not fetch the data from the server. Please try again!</div>');
 						 },
 						 complete: function(done){
@@ -603,7 +605,7 @@
 					   });
 					   return true;
 					} else {
-					   showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. <br> La Morena</div>');
+					   showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor vuelvalo a intentar más tarde. Gracias <br> La Morena</div>');
 					   //$('#success').html('<div class='mensaje' style="color: RED;">'+messgaeError+'</div>');
 					   return false;
 					}

@@ -1,25 +1,18 @@
 <?php
-if (isset($_REQUEST['Email']))  {
-    //Email information
-    $admin_email = "cabaniaslamorena@gmail.com";
-    $name = $_REQUEST['Nombre'];
-    $email = $_REQUEST['Email'];
-	$telefono = $_REQUEST['Telefono'];
-    $message = $_REQUEST['Mensaje'];
-	$asunto = "WEB E-mail Contacto - CABAÑAS LA MORENA";
-	
-	$mensajeFinal = "Nombre: " . $name . " \r\n"; 
-	$mensajeFinal .= "E-mail: " . $email . " \r\n"; 
-	$mensajeFinal .= "Teléfono: " . $telefono . " \r\n";
-	$mensajeFinal .= "Mensaje: " . $message .  " \r\n"; 
-
-
-    //send email
-    if (mail($admin_email, $asunto , $mensajeFinal, "From:" . $email)) {
-        echo 1;
-    }
-    else {
-    	echo 0;
-    }
+if(isset($_POST["Nombre"]) && isset($_POST["Email"]) && isset($_POST["Mensaje"]) ){
+$to = "cabaniaslamorena@gmail.com";
+$subject = "WEB E-mail Contacto - CABANIAS LA MORENA";
+$contenido .= "Nombre: ".$_POST["Nombre"]."\n";
+$contenido .= "Email: ".$_POST["Email"]."\n";
+$contenido .= "Telefono: ".$_POST["Telefono"]."\n";
+$contenido .= "Contenido: ".$_POST["Mensaje"]."\n\n";
+$header = "From: no-reply@webcabaniaslamorena.com.ar\n";
+$header .= "Mime-Version: 1.0\n";
+$header .= "Content-Type: text/plain";
+if(mail($to, $subject, $contenido ,$header)){
+echo 1;
+}
+else
+echo 0;
 }
 ?>
