@@ -41,6 +41,7 @@
 		</script>
 		
 		
+		
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
 		<script>
 		
@@ -96,13 +97,49 @@
 		  ga('create', 'UA-24485489-1', 'auto');
 		  ga('send', 'pageview');
 
-</script>
+		</script>
 		
 		
 		
 	</head>
 
 	<body data-spy="scroll">
+	
+								<!-- Google Code for seguimiento de envio de e-mail Conversion Page
+				In your html page, add the snippet and call
+				goog_report_conversion when someone clicks on the
+				chosen link or button. -->
+				<script type="text/javascript">
+				  /* <![CDATA[ */
+				  goog_snippet_vars = function() {
+					var w = window;
+					w.google_conversion_id = 966544375;
+					w.google_conversion_label = "PazCCKD-n2QQ95fxzAM";
+					w.google_remarketing_only = false;
+				  }
+				  // DO NOT CHANGE THE CODE BELOW.
+				  goog_report_conversion = function(url) {
+					goog_snippet_vars();
+					window.google_conversion_format = "3";
+					var opt = new Object();
+					opt.onload_callback = function() {
+					if (typeof(url) != 'undefined') {
+					  window.location = url;
+					}
+				  }
+				  var conv_handler = window['google_trackConversion'];
+				  if (typeof(conv_handler) == 'function') {
+					conv_handler(opt);
+				  }
+				}
+				/* ]]> */
+				</script>
+				<script type="text/javascript"
+				  src="//www.googleadservices.com/pagead/conversion_async.js">
+				</script>
+
+
+
 	
 		<!-- Navigation -->
 		<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -415,7 +452,7 @@
 									<div id="success" style="float: right;"> </div>
 									<div class="col-sm-3 col-sm-6 height-contact-element">
 										<div class="form-group">
-											<input type="SUBMIT" name="enviar" class="btn btn-md btn-custom btn-noborder-radius" value="Enviar"/>
+											<input onclick="goog_report_conversion" type="SUBMIT" name="enviar" class="btn btn-md btn-custom btn-noborder-radius" value="Enviar"/>
 											
 										</div>
 									
