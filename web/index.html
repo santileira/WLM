@@ -13,9 +13,9 @@
 		<!-- Custom Fonts -->
 		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<!-- Custom CSS -->
-		<link rel="stylesheet" href="css/patros.css" >
+		<link rel="stylesheet" href="css/patros.min.css" >
 		<!-- Lightbox -->
-		<link href="css/lightbox.css" rel="stylesheet">
+		<link href="css/lightbox.min.css" rel="stylesheet">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -42,7 +42,7 @@
 		
 		
 		
-		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
 		<script>
 		
 		var map;
@@ -56,7 +56,7 @@
 				center: myLatlng,
 				zoom: 14,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
-				}
+				};
 			var map = new google.maps.Map(mapCanvas , mapOptions);
 			
 			
@@ -83,8 +83,15 @@
 			infowindow.open(map, marker);
 		}
 			
-			google.maps.event.addDomListener(window, 'load', initialize);
-		
+			/*google.maps.event.addDomListener(window, 'load', initialize);*/
+
+		function loadScript() {
+		  var script = document.createElement("script");
+		  script.type = "text/javascript";
+		  script.src ="http://maps.googleapis.com/maps/api/js?&sensor=false&callback=initialize";
+		  document.body.appendChild(script); 
+		}   
+		window.onload = loadScript;
 		
 		</script>
 		
@@ -134,7 +141,7 @@
 				}
 				/* ]]> */
 				</script>
-				<script type="text/javascript"
+				<script async type="text/javascript"
 				  src="//www.googleadservices.com/pagead/conversion_async.js">
 				</script>
 
@@ -502,7 +509,7 @@
 			</div>
 
 		<!-- jQuery -->
-		<script src="js/jquery.js"></script>
+		<script src="js/jquery.min.js"></script>
 		<!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
 
@@ -510,7 +517,7 @@
 		<!-- <script src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=true&amp;libraries=places"></script> -->
 
 		<!-- Portfolio -->
-		<script src="js/jquery.quicksand.js"></script>	    
+		<script src="js/jquery.quicksand.min.js"></script>	    
 	
 
 	
@@ -600,7 +607,6 @@
 					e.preventDefault();
 					e.stopPropagation();
 
-					// get values from FORM
 					var name = $("#Nombre").val();
 					var email = $("#Email").val();
 					var telefono = $("#Telefono").val();
@@ -620,20 +626,18 @@
 						   if (response==1) {
 								
 								showLightbox('<div class="mensaje" style="color: green; text-align:center">El e-mail se envió correctamente. Nos contactaremos a la brevedad. <br> La Morena</div>');
-							 //$('#success').html('<div "class="alert alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button>El e-mail se envio correctamente</div>');
-							//window.location.reload();
-								
+			
 								
 						   } else {
 								showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. Gracias <br> La Morena</div>')
-								//$('#success').html('<div class="alert alert-danger">No se pudo enviar. Intentelo mas tarde</div>');
+
 						
 						   }
 						  
 						 },
 						 error:function(e){
 						   showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor vuelvalo a intentar más tarde. <br> La Morena</div>');
-						   //$('#success').html('<div class="col-md-12 text-center">We could not fetch the data from the server. Please try again!</div>');
+
 						 },
 						 complete: function(done){
 						   console.log('Finished');
@@ -644,7 +648,7 @@
 					   return true;
 					} else {
 					   showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor vuelvalo a intentar más tarde. Gracias <br> La Morena</div>');
-					   //$('#success').html('<div class='mensaje' style="color: RED;">'+messgaeError+'</div>');
+					  
 					   return false;
 					}
 					return false;
@@ -663,7 +667,7 @@
 	</div>
 	<div id="fade" class="fadebox">&nbsp;</div>
 
-<script src="js/lightbox.js">
+<script src="js/lightbox.min.js">
 
 </script>
 
