@@ -956,7 +956,7 @@
   <!-- ******************************************* -->
   <!-- Button : topleft -->
   <!-- ******************************************* -->
-
+<!--
   <layer name="button1"
          keep="true"
          url="%FIRSTXML%/graphics/button1/logo_mobile.png" 
@@ -977,7 +977,7 @@
   <action name="hidebutton1">set(layer[button1].visible, false);</action>
   <action name="showbutton1">set(layer[button1].visible, true);</action>
 
-
+-->
 
 <!-- ************ -->
 <!-- Context Menu -->

@@ -6,8 +6,8 @@
 <!-- ************************ -->
 
   <data name="en_project_title"><![CDATA[Cabañas La Morena]]></data>
-  <data name="en_project_author_name"><![CDATA[Creado por Plano Virtual]]></data>
-  <data name="en_project_author_url"><![CDATA[http://www.planovirtual.com.ar]]></data>
+  <data name="en_project_author_name"><![CDATA[]]></data>
+  <data name="en_project_author_url"><![CDATA[]]></data>
 
 
 
@@ -26,7 +26,7 @@
   <data name="en_togglebutton1firsttooltip"><![CDATA[]]></data>
   <data name="en_togglebutton1secondtooltip"><![CDATA[]]></data>
   <data name="en_buttontooltip"><![CDATA[]]></data>
-  <data name="en_buttonopenurlwebsiteurl"><![CDATA[http://www.planovirtual.com.ar]]></data>
+  <data name="en_buttonopenurlwebsiteurl"><![CDATA[]></data>
   <data name="en_button1tooltip"><![CDATA[]]></data>
 
 

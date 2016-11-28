@@ -297,8 +297,9 @@ figure.effect-oscar:hover img {	opacity: 0.4; }
 #contactpage .form-control { color:#3d3d3d; }
 #contactpage h2 { margin:40px 0; }
 #page1 {padding: 80px 0px 40px 0px;}
-#fotos {padding-top:80px; margin-bottom: 80px; clear:both; display: block; }
-#ubicacion { padding-top:80px;}
+#fotos {padding-top:40px; margin-bottom: 80px; clear:both; display: block; }
+#foto360 {padding-top:40px; margin-bottom: 80px; clear:both; display: block; }
+#ubicacion { padding-top:40px;}
 #ubicacion ul {text-align: center;}
 #ubicacion li{ display: inline-block; margin-right:24px; font-size:18px; }
 #ubicacion .teamspace{ margin-top:30px; }
@@ -322,7 +323,7 @@ ul.nav-pills  { text-align: center; margin: 25px auto 20px auto; width: auto; di
 .modal-dialog { height: 100%; width: 100%; display: flex; align-items: center; }
 .modal-content { margin: 0 auto;  max-width: 80%;  max-height: 80%; }
 .nav li a { text-transform: uppercase; }
-#bienvenidos h2, #cabanas h2, #bloghome h2, #ubicacion h2, #fotos h2, #contactos h2, #inicio h3 { text-transform: uppercase; }
+#bienvenidos h2, #cabanas h2, #bloghome h2, #ubicacion h2, #fotos h2,#foto360 h2, #contactos h2, #inicio h3 { text-transform: uppercase; }
 @media screen and (max-width: 768px) {
 .navbar-inverse .navbar-nav li { margin-right:5px; margin-left:5px;}
 .team-img img { margin-left:auto; margin-right:auto; width:90%; }
@@ -449,6 +450,10 @@ header.carousel {
     padding-bottom: 0;
 }
 #fotos {
+    padding-top: 10px;
+    margin-bottom: 0;
+}   
+#foto360 {
     padding-top: 10px;
     margin-bottom: 0;
 }    
@@ -695,3 +700,17 @@ color:#1E5267;
  width: 600px;
         height: 550px;
       }
+	  
+@media screen and (max-width: 768px) {
+	#iframe360{
+	width: 90%;    
+	margin: auto;
+    display: block;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	#iframe360{
+	height:400px;
+	}
+}

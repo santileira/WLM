@@ -929,6 +929,7 @@
          visible="false"
          />
 
+
   <action name="togglebutton1OnClick">
     if (state,
       set(state, false);enterFullscreen();
@@ -940,8 +941,9 @@
 
 
       set(url,%FIRSTXML%/graphics/togglebutton1/fullscreen1.png);
-    );
+  );
   </action>
+    
 
   <events name="togglebutton1events" 
     onTourStart="showtogglebutton1();"
@@ -956,7 +958,7 @@
   <!-- ******************************************* -->
   <!-- Button : bottomright -->
   <!-- ******************************************* -->
-
+<!--
   <layer name="button"
          keep="true"
          url="%FIRSTXML%/graphics/button/creado_por_pv2.png" 
@@ -980,12 +982,12 @@
   <action name="hidebutton">set(layer[button].visible, false);</action>
   <action name="showbutton">set(layer[button].visible, true);</action>
 
-
+-->
 
   <!-- ******************************************* -->
   <!-- Button : topleft -->
   <!-- ******************************************* -->
-
+  <!--
   <layer name="button1"
          keep="true"
          url="%FIRSTXML%/graphics/button1/logo_pc.png" 
@@ -1005,7 +1007,7 @@
     keep="true" />
   <action name="hidebutton1">set(layer[button1].visible, false);</action>
   <action name="showbutton1">set(layer[button1].visible, true);</action>
-
+-->
 
 
 <!-- ************ -->
