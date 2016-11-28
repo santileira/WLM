@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="en_project_title"><![CDATA[Cabañas La Morena]]></data>
+  <data name="en_project_author_name"><![CDATA[Creado por Plano Virtual]]></data>
+  <data name="en_project_author_url"><![CDATA[http://www.planovirtual.com.ar]]></data>
+
+
+
+  <data name="en_pano9_title"><![CDATA[jardin]]></data>
+  <data name="en_spotpoint24_tooltip"><![CDATA[CABAÑA]]></data>
+
+
+  <data name="en_pano11_title"><![CDATA[cabaña]]></data>
+  <data name="en_spotpoint26_tooltip"><![CDATA[JARDÍN]]></data>
+
+
+
+
+
+
+  <data name="en_togglebutton1firsttooltip"><![CDATA[]]></data>
+  <data name="en_togglebutton1secondtooltip"><![CDATA[]]></data>
+  <data name="en_button1tooltip"><![CDATA[]]></data>
+
+
+
+
+
+
+
+
+</krpano>
