@@ -101,24 +101,41 @@
 	</head>
 
 	<body data-spy="scroll">
-		<!-- Google Code for visitante completa formulario de contacto Conversion Page -->
+		<!-- Google Code for seguimiento de envio de e-mail Conversion Page
+
+In your html page, add the snippet and call
+
+goog_report_conversion when someone clicks on the
+
+chosen link or button. -->
 		<script type="text/javascript">
-			/* <![CDATA[ */
-			var google_conversion_id = 966544375;
-			var google_conversion_language = "en";
-			var google_conversion_format = "3";
-			var google_conversion_color = "ffffff";
-			var google_conversion_label = "07ICCMuPiGQQ95fxzAM";
-			var google_remarketing_only = false;
-			/* ]]> */
+		  /* <![CDATA[ */
+		  goog_snippet_vars = function() {
+		    var w = window;
+		    w.google_conversion_id = 966544375;
+		    w.google_conversion_label = "PazCCKD-n2QQ95fxzAM";
+		    w.google_remarketing_only = false;
+		  }
+		  // DO NOT CHANGE THE CODE BELOW.
+		  goog_report_conversion = function(url) {
+		    goog_snippet_vars();
+		    window.google_conversion_format = "3";
+		    var opt = new Object();
+		    opt.onload_callback = function() {
+		    if (typeof(url) != 'undefined') {
+		      window.location = url;
+		    }
+		  }
+		  var conv_handler = window['google_trackConversion'];
+		  if (typeof(conv_handler) == 'function') {
+		    conv_handler(opt);
+		  }
+		}
+		/* ]]> */
 		</script>
-		<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+		<script type="text/javascript"
+		  src="//www.googleadservices.com/pagead/conversion_async.js">
 		</script>
-		<noscript>
-			<div style="display:inline;">
-			<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/966544375/?label=07ICCMuPiGQQ95fxzAM&amp;guid=ON&amp;script=0"/>
-			</div>
-		</noscript>
 		
 		<!-- Navigation -->
 		<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -440,7 +457,7 @@
 									<div id="success" style="float: right;"> </div>
 									<div class="col-sm-3 col-sm-6 height-contact-element">
 										<div class="form-group">
-											<input onclick="goog_report_conversion" type="SUBMIT" name="enviar" class="btn btn-md btn-custom btn-noborder-radius" value="Enviar"/>
+											<input onClick="goog_report_conversion ();" type="SUBMIT" name="enviar" class="btn btn-md btn-custom btn-noborder-radius" value="Enviar"/>
 											
 										</div>
 									
@@ -582,52 +599,26 @@
 				$('#contactForm').on('submit', function(e){
 					e.preventDefault();
 					e.stopPropagation();
-
-					var name = $("#Nombre").val();
-					var email = $("#Email").val();
-					var telefono = $("#Telefono").val();
-					var message = $("#Mensaje").val();
-					var goodToGo = true;
-					
-					var pattern = new RegExp(/^(('[\w-\s]+')|([\w-]+(?:\.[\w-]+)*)|('[\w-\s]+')([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-				
-					 
-					if (goodToGo) {
-					   $.ajax({
+					$.ajax({
 						 data: $('#contactForm').serialize(),
-						 beforeSend: function() {
-						   
-						 },
 						 success:function(response){
 						   if (response==1) {
-								
 								showLightbox('<div class="mensaje" style="color: green; text-align:center">El e-mail se envió correctamente. Nos contactaremos a la brevedad. <br> La Morena</div>');
-			
 								
 						   } else {
-								showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. Gracias <br> La Morena</div>')
-
-						
+								showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor intentelo de nuevo más tarde. Gracias <br> La Morena</div>');
 						   }
-						  
 						 },
 						 error:function(e){
 						   showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor vuelvalo a intentar más tarde. <br> La Morena</div>');
-
 						 },
 						 complete: function(done){
 						   console.log('Finished');
 						 },
 						 type: 'POST',
-						 url: 'js/send_email.php', 
+						 url: 'js/send_email.php'
 					   });
-					   return true;
-					} else {
-					   showLightbox('<div class="mensaje" style="color: RED; text-align:center"">El e-mail no se ha podido enviar. Por favor vuelvalo a intentar más tarde. Gracias <br> La Morena</div>');
-					  
-					   return false;
-					}
-					return false;
+					  return true;
 				});
 			});
 		
