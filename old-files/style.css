@@ -1,0 +1,51 @@
+TD {
+	FONT-SIZE: 11px; VERTICAL-ALIGN: top; COLOR: #6e6e6e; FONT-FAMILY: Tahoma; TEXT-ALIGN: left
+}
+FORM {
+	MARGIN: 0px
+}
+A {
+	COLOR: #6e6e6e; TEXT-DECORATION: underline
+}
+.g {
+	COLOR: #6f9200
+}
+A.gn {
+	FONT-SIZE: 10px; COLOR: #6d9000; TEXT-DECORATION: none
+}
+A.g {
+	COLOR: #72930d; TEXT-DECORATION: underline
+}
+A.light {
+	COLOR: #7b7a7a; TEXT-DECORATION: underline
+}
+INPUT {
+	BORDER-RIGHT: #7f7f7f 1px solid; BORDER-TOP: #7f7f7f 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #7f7f7f 1px solid; BORDER-BOTTOM: #7f7f7f 1px solid; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: #d6d6d6
+}
+TEXTAREA {
+	BORDER-RIGHT: #7f7f7f 1px solid; BORDER-TOP: #7f7f7f 1px solid; FONT-SIZE: 11px; OVERFLOW: auto; BORDER-LEFT: #7f7f7f 1px solid; BORDER-BOTTOM: #7f7f7f 1px solid; FONT-FAMILY: Tahoma; BACKGROUND-COLOR: #d6d6d6
+}
+A.top {
+	COLOR: #868484; TEXT-DECORATION: none
+}
+.top {
+	FONT-SIZE: 10px; COLOR: #868484
+}
+.white {
+	COLOR: #ffffff
+}
+.copy {
+	FONT-SIZE: 10px; COLOR: #8f8e8e; FONT-FAMILY: Verdana
+}
+A.copy {
+	COLOR: #84af00; TEXT-DECORATION: none
+}
+.t9 {
+	FONT-SIZE: 9px
+}
+.boton {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 10px; BACKGROUND: #638cb5; BORDER-LEFT: 0px; WIDTH: 80px; COLOR: white; BORDER-BOTTOM: 0px; FONT-FAMILY: Verdana,Helvetica; HEIGHT: 19px
+}
+.boton2 {
+	BORDER-RIGHT: #00cc33 1px solid; BORDER-TOP: #00ff00 1px solid; FONT-WEIGHT: bold; BORDER-LEFT: #00ff00 1px solid; COLOR: #ffffff; BORDER-BOTTOM: #00cc33 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #0099cc
+}
