@@ -91,7 +91,7 @@ footer { background-color: #1E1E1E; width:100%; display:block; color:#f7f7f7; }
     font-size: 14px;}*/
 .prodmap{margin-right:0px;  margin-left:0px;  position: relative;}
 #contactos {background-color: #1E5267;}
-#contactos .fa{padding-right: 31px; color:#3FBBEC ;}
+#contactos .fa{padding-right: 0px; color:#3FBBEC ;}
 span.text a{
 	color:#fff;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -464,7 +464,7 @@ div#map-canvas-holder {
    font-size: 11px !important;
 }  
 #contactos .fa {
-    padding-right: 15px;
+    padding-right: 0px;
 }  
 header.carousel {
     max-height:320px;
