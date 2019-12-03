@@ -118,7 +118,7 @@
 <!--						<li id="botonMenuFoto">-->
 <!--							<a href="#fotos">Fotos</a>-->
 <!--						</li>-->
-						<li>
+						<li id ="botonMenuFoto">
 							<a href="#galeria">Galería</a>
 						</li>
 						<li>
@@ -363,7 +363,8 @@
 						<br><br><br><br>
 						<h2>GALERÍA</h2>
 						<img class="img-responsive displayed" src="new-images/section-divider.png" alt="about" style="margin-bottom: 15px;">
-						<div class="container">
+					</div>
+					<div class="container">
 							<div class="row">
 								<div class="text-center cabañas">
 									<br><br>
@@ -373,6 +374,8 @@
 									<iframe class="video" src="https://www.youtube.com/embed/LJ607u6sW1U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</div>
+						</div>
+					<div class="container">
 							<div class="row">
 								<div class="text-center cabañas">
 									<br><br>
@@ -381,6 +384,8 @@
 
 								<iframe id="iframe360" src="la_morena360/la_morena.html" name="mipagina" width="100%" height="700" framedorber="1" allowfullscreen>Tu navegador no soporta iframes</iframe>
 							</div>
+						</div>
+					<div class="container">
 							<div class="row">
 								<div class="text-center cabañas">
 									<br><br>
@@ -451,7 +456,6 @@
 								</ul>
 							</div>
 						</div>
-					</div>
 				</div>
 			</div>
 
@@ -524,12 +528,6 @@
 				</div>
 			</div>
 		</section>
-
-
-		<div id="location">
-			<div class="container">
-			</div>
-		</div>
 
 		<section id="contactos">
 			<div class="container"> 
@@ -667,9 +665,9 @@
 					$(this).parent().addClass("active");
 				});
 				
-				// $(".botonesFoto").on("click", function(){
-				// 	document.getElementById('botonMenuFoto').classList.add('active')
-				// });
+				$(".botonesFoto").on("click", function(){
+					document.getElementById('botonMenuFoto').classList.add('active')
+				});
 				
 				$(".menuPrincipal li a").on("click", function(){
 					var menu = document.getElementById('bs-example-navbar-collapse-1');
