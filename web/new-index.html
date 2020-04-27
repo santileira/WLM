@@ -72,6 +72,8 @@
 
 	<body data-spy="scroll">
 
+		<script src="js/lazysizes.min.js" async></script>
+
 		<script>
 			function gtag_report_conversion(url) {
 		  		var callback = function () {
@@ -99,7 +101,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="new-index.html" ><img src="new-images/la-morena-logo.png" alt="company logo" /></a>
+						<a class="navbar-brand" href="new-index.html" ><img class="lazyload" data-src="new-images/la-morena-logo.png" alt="company logo" /></a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right custom-menu menuPrincipal">
@@ -162,7 +164,7 @@
 						<div class="text-center cabañas">
 							<br>
 							<h2>Bienvenidos</h2>
-							<img class="img-responsive displayed" src="new-images/section-divider.png" alt="Bienvenidos"/>
+							<img class="lazyload img-responsive displayed" data-src="new-images/section-divider.png" alt="Bienvenidos"/>
 							<div class="row">
 								<div class="col-md-12">
 									<p class="m_5" >Ahora, para disfrutar y descansar, no necesit&aacutes irte tan lejos.</p>
@@ -172,13 +174,13 @@
 									<p class="m_6"><a class="hipervinculo" href="#contactos">Consult&aacute</a> por promociones especiales de acuerdo a cantidad de d&iacuteas y de personas alojadas.<br>ABIERTO TODO EL A&NtildeO </p>
 									<a href="http://www.booking.com/hotel/ar/cabanas-la-morena.es.html?aid=376374;label=esrow-2FiYWyplcmHTsm7u4nIXBwS70146491326%3Apl%3Ata%3Ap1%3Ap2845.000%3Aac%3Aap1t1%3Aneg%3Afi%3Atikwd-65526620%3Alp1000073%3Ali%3Adec%3Adm;sid=ca858ab8e5ed241b50ad6ed45eeef914;dcid=1;dist=0;group_adults=2;room1=A%2CA;sb_price_type=total;srfid=20b0140bb6dd4cf106656e5a521ed1f0382938ebX1;type=total;ucfs=1&"
 									target="_blank">
-										<img class="img-responsive displayed opinion" src="new-images/booking-logo.png" alt="Visite las cabañas">
+										<img class="lazyload img-responsive displayed opinion" data-src="new-images/booking-logo.png" alt="Visite las cabañas">
 									</a>
 									<div id="TA_cdsratingsonlynarrow160" class="TA_cdsratingsonlynarrow derecha">
 										<ul id="JScX4xH" class="TA_links p8gOJ16Mi">
 											<li id="wnCR5Uq6V" class="4vlfKqOzx">
 												<a target="_blank" href="https://www.tripadvisor.com.ar/">
-													<img src="https://www.tripadvisor.com.ar/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png" alt="TripAdvisor"/>
+													<img class="lazyload" data-src="https://www.tripadvisor.com.ar/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png" alt="TripAdvisor"/>
 												</a>
 											</li>
 										</ul>
@@ -203,7 +205,7 @@
 						<div class="col-md-12 homeservices1">
 							<div class="col-md-3 portfolio-item">
 								<div class="text-center">
-									<img class="img-responsive displayed" src="new-images/wifi-icon.png"/>
+									<img class="lazyload img-responsive displayed" data-src="new-images/wifi-icon.png"/>
 									<h3>
 										<a href="#">GRATIS</a>
 									</h3>
@@ -218,7 +220,7 @@
 						
 							<div class="col-md-3 portfolio-item">
 								<div class="text-center">
-									<img class="img-responsive displayed" src="new-images/disability-icon.png"/>
+									<img class="lazyload img-responsive displayed" data-src="new-images/disability-icon.png"/>
 									<h3>
 										<a href="#">ACCESIBLES</a>
 									</h3>
@@ -233,7 +235,7 @@
 
 							<div class="col-md-3 portfolio-item">
 								<div class="text-center">
-									<img class="img-responsive displayed" src="new-images/barbecue-icon.png"/>
+									<img class="lazyload img-responsive displayed" data-src="new-images/barbecue-icon.png"/>
 									<h3>
 										<a href="#">PARRILLA INDIVIDUAL</a>
 									</h3>
@@ -248,7 +250,7 @@
 
 							<div class="col-md-3 portfolio-item">
 								<div class="text-center">
-									<img class="img-responsive displayed" src="new-images/security-icon.png"/>
+									<img class="lazyload img-responsive displayed" data-src="new-images/security-icon.png"/>
 									<h3>
 										<a href="#">SEGURIDAD MONITOREADA</a>
 									</h3>
@@ -362,7 +364,7 @@
 					<div class="text-center cabañas">
 						<br><br><br><br>
 						<h2>GALERÍA</h2>
-						<img class="img-responsive displayed" src="new-images/section-divider.png" alt="about" style="margin-bottom: 15px;">
+						<img class="lazyload img-responsive displayed" data-src="new-images/section-divider.png" alt="about" style="margin-bottom: 15px;">
 					</div>
 					<div class="container">
 							<div class="row">
@@ -392,66 +394,51 @@
 									<h4>FOTOS</h4>
 								</div>
 
-								<ul class="filter nav nav-pills">
-									<li data-value="all" >
-										<a class="active botonesFoto" href="#">Todas</a>
-									</li>
-									<li data-value="development">
-										<a class="botonesFoto" href="#">Caba&ntildeas</a>
-									</li>
-									<li data-value="webdesign">
-										<a href="#" class="botonesFoto">Jard&iacuten</a>
-									</li>
-									<li data-value="mobileapps">
-										<a href="#" class="botonesFoto">Entretenimiento</a>
-									</li>
-								</ul>
-
 								<ul class="port2">
 									<li data-type="development" data-id="id-1" class="port3">
-										<a id="development1" href="new-images/photos-section/popup-1.jpg" data-lightbox="imagenes" ><img src="new-images/photos-section/port-1.jpg" alt=""></a>
+										<a id="development1" href="new-images/photos-section/popup-1.jpg" data-lightbox="imagenes" ><img class="lazyload" data-src="new-images/photos-section/port-1.jpg" alt=""></a>
 									</li>
 									<li data-type="webdesign" data-id="id-9" class="port3">
-										<a  href="new-images/photos-section/popup-12.jpg" data-lightbox="imagenes"  id="webdesign3"><img src="new-images/photos-section/port-12.jpg" alt=""></a>
+										<a  href="new-images/photos-section/popup-12.jpg" data-lightbox="imagenes"  id="webdesign3"><img class="lazyload" data-src="new-images/photos-section/port-12.jpg" alt=""></a>
 									</li>
 									<li data-type="mobileapps" data-id="id-12" class="port3">
-										<a  href="new-images/photos-section/popup-9.jpg" data-lightbox="imagenes"  id="mobileapps3"><img src="new-images/photos-section/port-9.jpg" alt=""></a>
+										<a  href="new-images/photos-section/popup-9.jpg" data-lightbox="imagenes"  id="mobileapps3"><img class="lazyload" data-src="new-images/photos-section/port-9.jpg" alt=""></a>
 									</li>
 									<li data-type="development" data-id="id-2" class="port3">
-										<a href="new-images/photos-section/popup-2.jpg" data-lightbox="imagenes" id="development2"><img src="new-images/photos-section/port-2.jpg" alt=""></a>
+										<a href="new-images/photos-section/popup-2.jpg" data-lightbox="imagenes" id="development2"><img class="lazyload" data-src="new-images/photos-section/port-2.jpg" alt=""></a>
 									</li>
 									<li data-type="webdesign" data-id="id-8" class="port3">
-										<a  href="new-images/photos-section/popup-11.jpg" data-lightbox="imagenes"  id="webdesign2"><img src="new-images/photos-section/port-11.jpg" alt=""></a>
+										<a  href="new-images/photos-section/popup-11.jpg" data-lightbox="imagenes"  id="webdesign2"><img class="lazyload" data-src="new-images/photos-section/port-11.jpg" alt=""></a>
 									</li>
 									<li data-type="mobileapps" data-id="id-10" class="port3">
-										<a  href="new-images/photos-section/popup-7.jpg" data-lightbox="imagenes"  id="mobileapps1"><img src="new-images/photos-section/port-7.jpg" alt=""></a>
+										<a  href="new-images/photos-section/popup-7.jpg" data-lightbox="imagenes"  id="mobileapps1"><img class="lazyload" data-src="new-images/photos-section/port-7.jpg" alt=""></a>
 									</li>
 									<li data-type="development" data-id="id-3" class="port3">
-										<a  href="new-images/photos-section/popup-3.jpg" data-lightbox="imagenes"  id="development3"><img src="new-images/photos-section/port-3.jpg" alt=""></a>
+										<a  href="new-images/photos-section/popup-3.jpg" data-lightbox="imagenes"  id="development3"><img class="lazyload" data-src="new-images/photos-section/port-3.jpg" alt=""></a>
 									</li>
 									<li data-type="webdesign" data-id="id-7" class="port3">
-										<a  href="new-images/photos-section/popup-10.jpg" data-lightbox="imagenes"  id="webdesign1"><img src="new-images/photos-section/port-10.jpg" alt=""></a>
+										<a  href="new-images/photos-section/popup-10.jpg" data-lightbox="imagenes"  id="webdesign1"><img class="lazyload" data-src="new-images/photos-section/port-10.jpg" alt=""></a>
 									</li>
 									<li data-type="mobileapps" data-id="id-11" class="port3">
-										<a  href="new-images/photos-section/popup-8.jpg" data-lightbox="imagenes"  id="mobileapps2"><img src="new-images/photos-section/port-8.jpg" alt=""></a>
+										<a  href="new-images/photos-section/popup-8.jpg" data-lightbox="imagenes"  id="mobileapps2"><img class="lazyload" data-src="new-images/photos-section/port-8.jpg" alt=""></a>
 									</li>
 									<li data-type="development" data-id="id-4" class="port3">
-										<a  href="new-images/photos-section/popup-4.jpg" data-lightbox="imagenes"  id="development4"><img src="new-images/photos-section/port-4.jpg" alt=""></a>
+										<a  href="new-images/photos-section/popup-4.jpg" data-lightbox="imagenes"  id="development4"><img class="lazyload" data-src="new-images/photos-section/port-4.jpg" alt=""></a>
 									</li>
 									<li data-type="development" data-id="id-5" class="port3">
-										<a  href="new-images/photos-section/popup-5.jpg" data-lightbox="imagenes"  id="development5"><img src="new-images/photos-section/port-5.jpg" alt=""></a>
+										<a  href="new-images/photos-section/popup-5.jpg" data-lightbox="imagenes"  id="development5"><img class="lazyload" data-src="new-images/photos-section/port-5.jpg" alt=""></a>
 									</li>
 									<li data-type="development" data-id="id-6" class="port3">
-										<a  href="new-images/photos-section/popup-6.jpg" data-lightbox="imagenes"  id="development6"><img src="new-images/photos-section/port-6.jpg" alt=""></a>
+										<a  href="new-images/photos-section/popup-6.jpg" data-lightbox="imagenes"  id="development6"><img class="lazyload" data-src="new-images/photos-section/port-6.jpg" alt=""></a>
 									</li>
 									<li data-type="webdesign" data-id="id-13" class="port3">
-										<a  href="new-images/photos-section/popup-13.jpg" data-lightbox="imagenes"  id="webdesign4"><img src="new-images/photos-section/port-13.jpg" alt=""></a>
+										<a  href="new-images/photos-section/popup-13.jpg" data-lightbox="imagenes"  id="webdesign4"><img class="lazyload" data-src="new-images/photos-section/port-13.jpg" alt=""></a>
 									</li>
 									<li data-type="webdesign" data-id="id-14" class="port3">
-										<a  href="new-images/photos-section/popup-14.jpg" data-lightbox="imagenes"  id="webdesign5"><img src="new-images/photos-section/port-14.jpg" alt=""></a>
+										<a  href="new-images/photos-section/popup-14.jpg" data-lightbox="imagenes"  id="webdesign5"><img class="lazyload" data-src="new-images/photos-section/port-14.jpg" alt=""></a>
 									</li>
 									<li data-type="webdesign" data-id="id-15" class="port3">
-										<a  href="new-images/photos-section/popup-15.jpg" data-lightbox="imagenes"  id="webdesign6"><img src="new-images/photos-section/port-15.jpg" alt=""></a>
+										<a  href="new-images/photos-section/popup-15.jpg" data-lightbox="imagenes"  id="webdesign6"><img class="lazyload" data-src="new-images/photos-section/port-15.jpg" alt=""></a>
 									</li>
 								</ul>
 							</div>
@@ -466,7 +453,7 @@
 				<div class="text-center cabañas">
 					<br><br>
 					<h2>Ubicaci&oacuten </h2>
-					<img class="img-responsive displayed" src="new-images/section-divider.png" alt="about"/>
+					<img class="lazyload img-responsive displayed" data-src="new-images/section-divider.png" alt="about"/>
 				</div>
 				<div>
 					<div class="row">
@@ -502,7 +489,7 @@
 										<ul id="v51cGxMUR" class="TA_links OoqavL">
 											<li id="N7ZPX4pApcd" class="VlmWLv0IIi">
 												<a target="_blank" href="https://www.tripadvisor.com.ar/">
-													<img src="https://static.tacdn.com/img2/widget/tripadvisor_logo_115x18.gif" alt="TripAdvisor" class="widEXCIMG" id="CDSWIDEXCLOGO"/>
+													<img data-src="https://static.tacdn.com/img2/widget/tripadvisor_logo_115x18.gif" alt="TripAdvisor" class="lazyload widEXCIMG" id="CDSWIDEXCLOGO"/>
 												</a>
 											</li>
 										</ul>
@@ -512,7 +499,7 @@
 										<ul id="ylkTUTpEh" class="TA_links pBifAaxI0jZ">
 											<li id="azKORgTYYGS" class="6IfX2ung">
 												<a target="_blank" href="https://www.tripadvisor.com.ar/Hotel_Review-g1961730-d6898580-Reviews-Cabanas_la_Morena-Ituzaingo_Province_of_Buenos_Aires_Central_Argentina.html">
-													<img src="https://www.tripadvisor.com.ar/img/cdsi/img2/awards/CoE2017_WidgetAsset-14348-2.png" alt="TripAdvisor" class="widCOEImg" id="CDSWIDCOELOGO"/>
+													<img data-src="https://www.tripadvisor.com.ar/img/cdsi/img2/awards/CoE2017_WidgetAsset-14348-2.png" alt="TripAdvisor" class="lazylaod widCOEImg" id="CDSWIDCOELOGO"/>
 												</a>
 											</li>
 										</ul>
